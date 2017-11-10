@@ -2,7 +2,7 @@
 # © 2017 Comunitea Servicios Tecnológicos S.L.
 # License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 
-from odoo import models, fields
+from odoo import api, models, fields
 
 
 class HrEmployeeRfidKey(models.Model):
@@ -12,6 +12,7 @@ class HrEmployeeRfidKey(models.Model):
 
     cardId = fields.Char("Card Id", required=True)
     employee_id = fields.Many2one("hr.employee", "Employee", required=True)
+    employee_name = fields.Char(related='employee_id.name')
     active = fields.Boolean("Active", default=True)
     description = fields.Text("Description")
 
@@ -32,3 +33,17 @@ class HrEmployee(models.Model):
 
     rfid_card_ids = fields.One2many("hr.employee.rfid.key", "employee_id",
                                     "RFID cards")
+
+    @api.multi
+    def register_rfid_attendance_event(self):
+        try:
+            attendance = self.attendance_action_change()
+            if attendance:
+                return True
+            else:
+                return False
+        except Exception as e:
+            pass
+
+
+

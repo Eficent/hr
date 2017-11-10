@@ -17,13 +17,15 @@
         <field name="model">hr.employee.rfid.key</field>
         <field name="arch" type="xml">
             <form string="RFID Key">
-                <group>
-                    <field name="cardId"/>
-                    <field name="employee_id"/>
-                    <field name="active"/>
-                    <separator string="Description" colspan="4"/>
-                    <field name="description" colspan="4" nolabel="1"/>
-                </group>
+                <sheet>
+                    <group>
+                        <field name="cardId"/>
+                        <field name="employee_id"/>
+                        <field name="active"/>
+                    </group>
+                        <separator string="Description" colspan="4"/>
+                        <field name="description" colspan="4"/>
+                </sheet>
             </form>
         </field>
     </record>
@@ -47,17 +49,12 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_hr_attendance_employee_rfid"
-              name="RFID"
-              parent="menu_hr_attendance_root"
-              sequence="20"
-              groups="hr_attendance.group_hr_attendance_user"/>
+    <menuitem id="menu_hr_employee_rfid"
+              parent="hr_attendance.menu_hr_attendance_settings"
+              name="RFID"/>
 
-    <menuitem id="menu_hr_attendance_view_attendances_employee_rfid_key"
+    <menuitem id="menu_hr_employee_rfid_key"
+              parent="menu_hr_employee_rfid"
               name="RFID Keys"
-              parent="menu_hr_attendance_employee_rfid"
-              sequence="10"
-              groups="hr_attendance.group_hr_attendance_user"
               action="action_hr_employee_rfid_key"/>
-
 </odoo>
