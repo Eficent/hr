@@ -39,11 +39,6 @@ help us smash it by providing detailed and welcomed feedback.
 Credits
 =======
 
-Images
-------
-
-* Odoo Community Association: `Icon <https://odoo-community.org/logo.png>`_.
-
 Contributors
 ------------
 
