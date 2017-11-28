@@ -2,7 +2,6 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===============
 ATTENDANCE RFID
 ===============
 
@@ -16,8 +15,11 @@ Credits
 Contributors
 ------------
 * Omar Catiñeira Saavedra <omar@comunitea.com>
+* Héctor Villarreal Ortega <hector.villarreal@eficent.com> [MIG] 10.0
 
 Maintainer
 ----------
+This module is maintained by:
+   Comunitea <http://www.comunitea.com>
+   Eficent <http://www.eficent.com>
 
-This module is maintained by the Comunitea <http://www.comunitea.comm>.
