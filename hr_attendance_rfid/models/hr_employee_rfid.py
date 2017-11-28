@@ -42,7 +42,7 @@ class HrEmployee(models.Model):
                 return True
             else:
                 return False
-        except Exception as e:
+        except:
             pass
 
 
