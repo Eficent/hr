@@ -44,6 +44,3 @@ class HrEmployee(models.Model):
                 return False
         except:
             pass
-
-
-
