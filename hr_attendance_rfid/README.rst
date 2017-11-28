@@ -12,19 +12,19 @@ Configuration
 
 To configure this module, you need to:
 
-#. Go to
+#. Go to Attendances -> Configuration -> RFID -> RFID Keys
+
+#. Configure a know key for a determinated employee
 
 Usage
 =====
 
 To use this module, you need to:
 
-#. Go to ...
-
-Known issues / Roadmap
-======================
-
-* ...
+#. Go to Attendances -> Configuration -> RFID -> RFID Log
+#. Check Logs.
+#. Go to Attendances -> Manage Attendances -> Attendances
+#. Check Attendances.
 
 Bug Tracker
 ===========
@@ -52,8 +52,8 @@ Maintainer
 ----------
 
 .. image:: https://odoo-community.org/logo.png
-   :alt: Odoo Community Association
-   :target: https://odoo-community.org
+    :alt: Odoo Community Association
+    :target: https://odoo-community.org
 
 This module is maintained by the OCA.
 
