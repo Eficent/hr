@@ -8,6 +8,7 @@ Attendance RFID
 
 This module extends the functionality of managing RFID card readers to support employees attendance integration.
 
+This module is aimed to be combined with an IoT RFID identificator, developed by Comunitea and released on version 10 by Eficent which is under development nowadays.
 
 Configuration
 =============
