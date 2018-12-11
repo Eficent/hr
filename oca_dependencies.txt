@@ -1,1 +1,2 @@
 partner-contact
+server-ux https://github.com/OCA/server-ux
