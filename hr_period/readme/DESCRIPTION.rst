@@ -1,12 +1,10 @@
-Adds the concept of payroll period.
+Adds the concept of period in the human resources management.
 
-The objective is not to restrict or complicate the payroll workflow.
-It is meant to reduce the number of clicks related to date selections and
-avoid mistakes.
+The objective of the module is to create periods of time to
+be used in the human resources management flows such as
+specific payroll period of time or timesheet periods.
 
-Adds the date of payment on the payslip and payslip batch. This date is
-automatically filled when selecting
-a period.
-
-Adds a sequence on the payslip batch name and also adds the company on the
-payslip batch.
+Regarding to payrolls, it adds the date of payment on the
+payslip and payslip batch. This date is automatically filled
+when selecting a period. It also adds a sequence on the payslip
+batch name and the company on the payslip batch.

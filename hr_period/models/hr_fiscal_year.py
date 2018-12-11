@@ -116,7 +116,7 @@ class HrFiscalYear(models.Model):
             ('4', 'Thursday'),
             ('5', 'Friday'),
             ('6', 'Saturday'),
-        ], 'Day of Payment',
+        ], 'Weekday of Payment',
         states={'draft': [('readonly', False)]}
     )
     payment_week = fields.Selection(

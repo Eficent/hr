@@ -3,6 +3,7 @@
 
 from . import test_hr_fiscalyear
 from odoo.exceptions import UserError, ValidationError
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
 
 
 class PayslipCase(test_hr_fiscalyear.TestHrFiscalyear):
@@ -151,7 +152,8 @@ class PayslipCase(test_hr_fiscalyear.TestHrFiscalyear):
             'hr_period_id': periods2[0].id,
             'company_id': self.company2.id})
         run.onchange_company_id()
-        self.assertEqual(run.hr_period_id.date_start, '2016-01-01')
+        self.assertEqual(
+            run.hr_period_id.date_start.strftime(DF), '2016-01-01')
 
     def test_contract(self):
         fy = self.create_fiscal_year(

@@ -1,9 +1,9 @@
 # Copyright 2015 Savoir-faire Linux. All Rights Reserved.
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from datetime import datetime
 from odoo.tests import common
 from odoo.exceptions import UserError, ValidationError
+from datetime import datetime
 
 
 class TestHrFiscalyear(common.TransactionCase):
