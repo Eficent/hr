@@ -72,6 +72,7 @@ class HrHolidays(models.Model):
     # Supporting field for avoiding limitation on storing readonly fields
     number_of_days_related = fields.Float(
         related="number_of_days", readonly=True,
+        string="Number of Days (technical field)"
     )
 
     @api.depends('date_from')
@@ -136,7 +137,7 @@ class HrHolidays(models.Model):
         """Trigger the number of days computation also when you change the
         employee or the leave type.
         """
-        self._onchange_date_to()
+        self._onchange_leave_dates()
 
     def _get_number_of_days(self, date_from, date_to, employee_id):
         """Pass context variable for including rest days or change passed dates
